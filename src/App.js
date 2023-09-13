@@ -1,9 +1,10 @@
 import React from 'react';
+import AddTodo from './compnents/User/AddTodo';
 
 function App() {
   return (
-    <div className="App">
-     
+    <div>
+     <AddTodo/>
     </div>
   );
 }
