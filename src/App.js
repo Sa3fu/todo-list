@@ -8,13 +8,19 @@ function App() {
   const saveAddHandler = (TodoList) =>{
     setTodoList((prevTodo) => {
       return[...prevTodo,{Todo:TodoList,id:Math.random().toString()}]
-    })
+    });
+  };
+
+  const deleteItemHandler = (itemId) => {
+    setTodoList((prevTodo) => {
+      return prevTodo.filter((item) => item.id !== itemId);
+    });
   };
 
   return (
     <div>
      <AddTodo onSaveTodo={saveAddHandler}/>
-     <TodoList items={todoList}/>
+     <TodoList items={todoList} onDeleteItem={deleteItemHandler}/>
     </div>
   );
 }
