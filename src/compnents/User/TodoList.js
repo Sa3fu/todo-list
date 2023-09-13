@@ -14,7 +14,7 @@ const TodoList = (props) => {
     <Card className={classes.todo} >
       {reversedList.length > 0 ? (<ul>
         {reversedList.map((item) => (
-          <li key={props.id} onClick={() => {handleItemHandler(item.id)}}>
+          <li key={item.id} onClick={() => {handleItemHandler(item.id)}}>
           {item.Todo}
           </li>
         ))}
