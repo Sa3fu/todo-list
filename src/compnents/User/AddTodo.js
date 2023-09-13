@@ -9,6 +9,7 @@ const AddTodo = props => {
     const submitHandler = event => {
         event.preventDefault();
         setEnteredTodo('');
+        props.onSaveTodo(enteredTodo)
     };
 
     return(
