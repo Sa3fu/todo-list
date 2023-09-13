@@ -24,3 +24,10 @@
     outline: none;
     border-color: #4f005f;
   }
+  .invalid label{
+    color: red;
+  }
+  .invalid input{
+    border-color: red;
+    background-color: rgb(218, 174, 174);
+  }
